@@ -9,8 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome link -->
 
-    <!-- style -->
-    <style></style>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
     <!-- customs color link -->
     <script>
         tailwind.config = {
@@ -19,6 +19,7 @@
                     colors: {
                         'font-primary': '#414040',
                         'font-secondary': '#707070',
+                        'btn-color': '#B68C5A',
                     }
                 }
             }
@@ -27,7 +28,7 @@
 </head>
 <body>
     <header class="container mx-auto">
-        <div class="navbar bg-base-100">
+        <nav class="navbar max-w-[1170px] mx-auto bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -60,7 +61,18 @@
             <div class="navbar-end">
                 <a class="text-center rounded-lg lg:w-56 w-32 lg:p-4 py-2 lg:font-semibold font-extralight text-white lg:text-lg text-xs bg-[#B68C5A]">Free Consultation</a>
             </div>
-        </div>
+        </nav>
+        <section class="banner__img mx-auto max-w-[1160px] h-[550px] rounded-lg flex justify-center items-center">
+            <div class="space-y-6">
+                <h1 class="text-white lg:text-7xl text-4xl font-extrabold text-center">We Provide Effective <br> Legal Solutions</h1>
+                <p class="text-base font-normal text-[#E7E7E7] text-center">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form,
+                by injected humour.</p>
+                <div class="join flex lg:gap-4 gap-2 lg:flex-row justify-center">
+                    <input type="email" placeholder="username@site.com" class="input lg:w-[500px]  p-4" />
+                    <button class="btn bg-btn-color border-0">Subscribe</button>
+                </div>
+            </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
