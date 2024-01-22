@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice</title>
+    <!-- Tailwind & DaisyUl link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link -->
+
+    <!-- style -->
+    <style></style>
+    <!-- customs color link -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'font-primary': '#414040',
+                        'font-secondary': '#707070',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm text-font-secondary font-normal dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex lg:gap-4 gap-2 items-center">
+                    <img class="lg:w-10 lg:h-10 h-7 w-7" src="images/business.png" alt="hammer">
+                    <a class="font-extrabold lg:text-4xl md:text-4xl text-2xl text-font-primary">Justice</a>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal text-font-secondary font-normal px-1">  
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Cases</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="text-center rounded-lg lg:w-56 w-32 lg:p-4 py-2 lg:font-semibold font-extralight text-white lg:text-lg text-xs bg-[#B68C5A]">Free Consultation</a>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
